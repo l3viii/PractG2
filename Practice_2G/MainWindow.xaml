@@ -1,0 +1,29 @@
+﻿<Window x:Class="Practice_2G.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practice_2G"
+        mc:Ignorable="d"
+        Title="Практическая 2" Height="177.415" Width="516.841">
+    <Grid>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="92" Margin="10,21,0,0" VerticalAlignment="Top" Width="290" CellEditEnding="DataGrid_CellEditEnding"/>
+        <Button Content="Find" HorizontalAlignment="Left" Margin="328,84,0,0" VerticalAlignment="Top" Width="146" Height="29" Click="Calculation_Click"/>
+        <TextBox x:Name="diff" HorizontalAlignment="Left" Height="23" Margin="328,56,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="146"/>
+        <Grid>
+            <Menu VerticalAlignment="Top">
+                <MenuItem Header="File">
+                    <MenuItem Header="Заполнить положительными числами" Click="FillPositiveArray_Click"/>
+                    <MenuItem Header="Заполнить отрицательными числами" Click="FillNegativeArray_Click"/>
+                    <MenuItem Header="Очистить массив" Click="ClearArray_Click"/>
+                    <MenuItem Header="Сохранить массив" Click="SaveArray_Click"/>
+                    <MenuItem Header="Открыть массив" Click="OpenArray_Click"/>
+                    <Separator/>
+                    <MenuItem Header="О программе" Click="Information_Click"/>
+                    <MenuItem Header="Выход" Click="Exit_Click"/>
+                </MenuItem>
+            </Menu>
+            <Label Content="diffirence:" HorizontalAlignment="Left" Margin="327,23,0,0" VerticalAlignment="Top" Width="107"/>
+        </Grid>
+    </Grid>
+</Window>
